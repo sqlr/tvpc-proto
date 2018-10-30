@@ -1,0 +1,31 @@
+/**
+ * Theme-specific imports
+ */
+
+/**
+ * Theme-specific variables
+ */
+$red: #d40000;
+$primary: $red;
+
+$body-bg: $primary;
+
+/**
+ * Base settings
+ */
+@import 'base';
+
+$text-primary: $white;
+
+/**
+ * Theme-specific styling
+ */
+body {
+    background: url('../images/gewis-background.jpg');
+    color: $text-primary;
+}
+
+.slide.logo {
+    background: url('../images/gewis-logo.jpg');
+    background-position: center center;
+}

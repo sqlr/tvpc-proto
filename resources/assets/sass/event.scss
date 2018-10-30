@@ -1,0 +1,24 @@
+/**
+ * Theme-specific imports
+ */
+
+/**
+ * Theme-specific variables
+ */
+$green: #0f6000;
+$primary: $green;
+
+$body-bg: $primary;
+
+/**
+ * Base settings
+ */
+@import 'base';
+
+/**
+ * Theme-specific styling
+ */
+.slide.logo {
+    background-position: center center;
+    background-repeat: no-repeat;
+}

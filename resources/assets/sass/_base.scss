@@ -1,0 +1,94 @@
+/**
+ * Base variables
+ */
+$font-size-base: 3rem;
+$line-height-base: 1.6;
+
+/**
+ * Base imports
+ */
+@import '~bootstrap/scss/bootstrap-reboot';
+
+/**
+ * Base styling
+ */
+
+// Containers
+html,
+body {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#app {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+// Supportive elements
+.clock {
+    display: block;
+    position: absolute;
+    top: 0.2em;
+    right: 0.6em;
+    z-index: 9999;
+    color: #ffffff;
+    font-family: $font-family-monospace;
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+}
+
+// Slides
+.slide {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    padding: 1.5rem 4rem;
+
+    > h1 {
+        border-bottom-color: #cccccc;
+        border-bottom-size: 3px;
+        border-bottom-style: solid;
+    }
+}
+
+.slide.logo {
+    background-size: cover;
+}
+
+$ns-blue: #092869;
+$ns-yellow: #ffb310;
+.slide.ns {
+    background-color: $ns-yellow;
+    color: $ns-blue;
+
+    > h1 {
+        border-bottom-color: $ns-blue;
+    }
+
+    .ns-departures-table {
+        width: 100%;
+        margin-left: 1em;
+        font-size: 1.2em;
+    }
+
+    .ns-departure-row td {
+        padding: 0.25em 0;
+    }
+
+    .ns-departure-destination {
+        font-weight: bold;
+    }
+
+    .ns-departure-route {
+        font-size: 0.4em;
+        font-weight: normal;
+        line-height: 0.8em;
+        display: block;
+        padding-left: 2em;
+    }
+}
